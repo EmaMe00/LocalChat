@@ -11,13 +11,19 @@ from tkinter import *
 #txtfld.place(x=40, y=500)
 #window.mainloop()
 
+#setting client TCP
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(("localhost",1234))
 
 #client.connect(("localhost",12345))
+
+#condition exit for some while
 done = False
+
+#string tmp
 mymsg = ""
 
+#(thread) print the chat update
 def chat():
     while not done:
         msg = client.recv(1024).decode('utf-8')
@@ -25,12 +31,14 @@ def chat():
         if(mymsg != msg):
             print(msg)
 
+#write chat in file
 def writeMessage(msg):
     f = open("chat.txt","a") 
     f.write(msg)
     f.write("\n")
     f.close() 
 
+#insert nickname
 print("Inserisci il tuo nickname in chat: ")
 nickname = input()
 print("\n DIGITARE QUIT PER USCIRE DALLA CHAT \n")

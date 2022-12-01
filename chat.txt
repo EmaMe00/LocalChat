@@ -1,12 +1,16 @@
 Inizio chat: 
 
-Caio: è entrato in chat 
+Matte: è entrato in chat 
 
-Caio: è entrato in chat 
+Matte: è entrato in chat 
 
-Caio: ciao
-Caio: ciao
-Caio: sium
-Caio: sium
-Ema: ci sono
-Ema: ci sono
+Matte: sium
+Matte: sium
+Matte: Eccomi
+Matte: Eccomi
+Ema: adoro
+Ema: adoro
+Matte: è uscito dalla chat 
+
+
+
