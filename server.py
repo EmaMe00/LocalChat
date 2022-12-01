@@ -9,7 +9,7 @@ print(IPAddr)
 
 #setting socket TCP
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(("localhost",1234))
+server.bind(("10.20.28.218",49152))
 
 #list of client
 listClient = []
