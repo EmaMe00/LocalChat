@@ -8,7 +8,7 @@ print(IPAddr)
 """
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(("localhost",12345))
+server.bind(("localhost",1234))
 listClient = []
 message = []
 
@@ -27,8 +27,8 @@ def recive(client):
     done = False
     while not done:
         msg = client.recv(1024).decode('utf-8')
-        print(msg.find("quit"))
-        if msg.find("quit") != -1:
+        #print(msg.find("quit"))
+        if msg.find("quit") != -1 or  msg == "":
             done = True
         elif msg != "null":
             print(msg)
