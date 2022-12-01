@@ -2,9 +2,18 @@ import socket
 import os
 from threading import Thread
 import threading
+from tkinter import *
+
+#window=Tk()
+#window.title('Client')
+#window.geometry("600x400+10+20")
+#txtfld=Entry(window, text="This is Entry Widget", bd=5)
+#txtfld.place(x=40, y=500)
+#window.mainloop()
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(("localhost",1234))
+
 #client.connect(("localhost",12345))
 done = False
 mymsg = ""
@@ -33,7 +42,7 @@ f.close()
 t1 = Thread(target = chat)
 t1.start()
 
-os.system("open chat.txt")
+#os.system("open chat.txt")
 tmp = nickname + ": è entrato in chat \n" 
 client.send(tmp.encode('utf-8'))
 
