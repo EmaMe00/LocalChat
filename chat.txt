@@ -1,10 +1,10 @@
 Inizio chat: 
 
-ùsium: è entrato in chat 
+sad: è entrato in chat 
 
-ùsium: è entrato in chat 
+sad: è entrato in chat 
 
-Ema: ciao
-Ema: ciao
-ùsium: ciao
-ùsium: ciao
+
+ema: è uscito dalla chat 
+
+
